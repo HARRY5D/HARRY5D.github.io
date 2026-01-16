@@ -1,10 +1,11 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HARNISH PATEL-PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Harnish Patel - Applied Machine Learning & Mobile Systems Engineer. Building production ML pipelines and robust FastAPI services.">
+    <meta name="theme-color" content="#00ff88">
+    <title>HARNISH PATEL - PORTFOLIO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -240,42 +241,81 @@
     </section>
 
     <section id="certifications" data-aos="fade-up">
-        <h2>Certifications</h2>
-        <ul class="cert-list">
-            <li>Neural Networks and Deep Learning – DeepLearning.ai</li>
-            <li>Data Analysis with Python – IBM</li>
-            <li>Postman API Fundamentals – Postman</li>
-            <li>Java Essentials – Infosys Springboard</li>
-            <li>Prompt Engineering – IBM</li>
-        </ul>
-    </section>
-
-    <section id="achievements" data-aos="fade-up">
-        <h2>Achievements</h2>
-        <ul class="achievement-list">
-            <li>Shortlisted to Smart India Hackathon (SIH) 2024 – Round 2</li>
-        </ul>
+        <h2>Certifications & Achievements</h2>
+        <div class="cert-achievements-container">
+            <div class="cert-section">
+                <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                <ul class="cert-list">
+                    <li><i class="fas fa-check-circle"></i> Neural Networks and Deep Learning – DeepLearning.ai</li>
+                    <li><i class="fas fa-check-circle"></i> Data Analysis with Python – IBM</li>
+                    <li><i class="fas fa-check-circle"></i> Postman API Fundamentals – Postman</li>
+                    <li><i class="fas fa-check-circle"></i> Java Essentials – Infosys Springboard</li>
+                    <li><i class="fas fa-check-circle"></i> Prompt Engineering – IBM</li>
+                </ul>
+            </div>
+            <div class="achievements-section">
+                <h3><i class="fas fa-trophy"></i> Achievements</h3>
+                <ul class="achievement-list">
+                    <li><i class="fas fa-award"></i> Shortlisted to Smart India Hackathon (SIH) 2024 – Round 2</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section id="contact" data-aos="fade-up">
-        <h2>Contact</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> Ahmedabad, India</p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:harnishdpatel@gmail.com">harnishdpatel@gmail.com</a></p>
-                <p><i class="fab fa-github"></i> <a href="https://github.com/HARRY5D" target="_blank">github.com/HARRY5D</a></p>
-                <p><i class="fab fa-linkedin"></i> <a href="https://bit.ly/HarnishPatel" target="_blank">linkedin.com/in/harnish-patel</a></p>
-            </div>
-            <div class="contact-form">
-                <h3>Send a Message</h3>
-                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="5e876b15-6100-4968-9257-46a73137c1a8">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-                <div id="formStatus"></div>
+        <h2>Get In Touch</h2>
+        <div class="contact-wrapper">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3><i class="fas fa-address-card"></i> Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <p>Ahmedabad, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p><a href="mailto:harnishdpatel@gmail.com">harnishdpatel@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <strong>GitHub</strong>
+                            <p><a href="https://github.com/HARRY5D" target="_blank">github.com/HARRY5D</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <p><a href="https://bit.ly/HarnishPatel" target="_blank">linkedin.com/in/harnish-patel</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3><i class="fas fa-paper-plane"></i> Send a Message</h3>
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="5e876b15-6100-4968-9257-46a73137c1a8">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <div id="formStatus"></div>
+                </div>
             </div>
         </div>
     </section>
